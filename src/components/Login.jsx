@@ -1,5 +1,5 @@
-import { useState,useContext, use } from "react";
-import {AuthContext} from "../context/AuthContext";
+import { useState, useContext } from 'react'
+import { AuthContext } from '../context/AuthContext'
 import {useNavigate} from "react-router-dom";
 
 const Login = () => {
@@ -17,7 +17,7 @@ const Login = () => {
             return;
         }
 
-        if(email == "admin@gmail.com"){
+        if (email === 'admin@gmail.com') {
             navigate("/admin/dashboard");
         }
         else{
